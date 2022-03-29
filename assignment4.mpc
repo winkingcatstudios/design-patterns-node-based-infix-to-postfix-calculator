@@ -1,0 +1,46 @@
+project (assignment4){
+  exename = calc
+  install = .
+
+  specific (make, gnauce){
+    compile_flags += -std=c++11 -g
+  }
+
+  Source_Files{
+    Driver.cpp
+    Expr_Node_Visitor.cpp
+    Calculator.cpp
+    Expr_Builder.cpp
+    Num_Node.cpp
+    Add_Node.cpp
+    Subtract_Node.cpp
+    Multiply_Node.cpp
+    Divide_Node.cpp
+    Mod_Node.cpp
+    Bin_Expr_Node.cpp
+    Expr_Node_Visitor.cpp
+  }
+
+  Template_Files{
+    Fixed_Array.cpp
+    Stack.cpp
+    Array.cpp
+    ArrayBase.cpp
+    Queue.cpp
+  }
+
+  Header_Files{
+    Expr_Node.h
+    Bin_Expr_Node.h
+    Calculator.h
+    Num_Node.h
+    Add_Node.h
+    Subtract_Node.h
+    Multiply_Node.h
+    Divide_Node.h
+    Mod_Node.h
+    Visitor_Base.h
+    Expr_Node_Visitor.h
+  }
+}
+
